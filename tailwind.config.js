@@ -1,0 +1,13 @@
+/** @type {import('tailwindcss').Config} */
+module.exports = {
+  content: ["./src/**/*.{js,jsx,ts,tsx}"],
+  theme: {
+    extend: {
+      colors: {
+        'hb': '#170305',
+        'hbmsg': '#D1BEAF'
+      }
+    },
+  },
+  plugins: [],
+}
