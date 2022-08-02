@@ -1,218 +1,64 @@
 import React from 'react'
 import Navigation from '../Navigation/Navigation'
-
-
-function handleClick() {
-  const question = document.querySelector('.questionDiv')
-  const answersDiv = document.querySelector('.answersDiv')
-  const startBtn = document.querySelector('.btn')
-  startBtn.classList.add('hide')
-  question.innerHTML = 'What would you like to order?'
-  const answers = ['Cupcakes', 'Cakes', 'Cookies']
-  answers.forEach(answer => {
-    const answerBtn = document.createElement('button')
-    answerBtn.classList.add('btn')
-    answerBtn.innerHTML = answer
-    answerBtn.value = answer
-    answersDiv.appendChild(answerBtn)
-    answerBtn.addEventListener('click', handleChange)
-  })
-
-}
-
-let order = {
-  item: '',
-  flavor: '',
-  quantity: 0,
-  date: "",
-  solidIcingColor: '',
-  icingType: ''
-}
-
-function handleChange(e) {
-  if (e.target.value === 'Cupcakes') {
-    const item = e.target.value
-    order.item = item
-    cupcakes()
-  } else if (e.target.value === 'Cakes') {
-    console.log('Cakew')
-  } else if (e.target.value === 'Cookies') {
-    console.log('Cookies')
-  }
-}
-
-function handleFlavor(e) {
-  if (e.target.value === 'Vanilla') {
-    const flavor = e.target.value
-    order.flavor = flavor
-    handleQuantity()
-  } else if (e.target.value === 'Chocolate') {
-    const flavor = e.target.value
-    order.flavor = flavor
-    handleQuantity()
-  } else if (e.target.value === 'Red Velvet') {
-    const flavor = e.target.value
-    order.flavor = flavor
-    handleQuantity()
-  } else if (e.target.value === 'Double Chocolate Chip') {
-    const flavor = e.target.value
-    order.flavor = flavor
-    handleQuantity()
-  } else if (e.target.value === 'Mint Chocolate Chip') {
-    const flavor = e.target.value
-    order.flavor = flavor
-    handleQuantity()
-  } else if (e.target.value === 'Lemon') {
-    const flavor = e.target.value
-    order.flavor = flavor
-    handleQuantity()
-  } else if (e.target.value === 'Strawberry Cream') {
-    const flavor = e.target.value
-    order.flavor = flavor
-    handleQuantity()
-  }
-}
-
-function handleQuantity() {
-  const question = document.querySelector('.questionDiv')
-  const answersDiv = document.querySelector('.answersDiv')
-  question.innerHTML = "How many cupcakes do you need?"
-  answersDiv.innerHTML = ""
-  const quantity = ['1/2 Dozen', '1 Dozen', '2 Dozen', '3 Dozen', '4 Dozen', '5 Dozen',]
-  quantity.forEach(q => {
-    const quantityBtn = document.createElement('button')
-    quantityBtn.classList.add('btn')
-    quantityBtn.innerHTML = q
-    quantityBtn.value = q
-    answersDiv.appendChild(quantityBtn)
-    quantityBtn.addEventListener('click', handleDate)
-  })
-}
-
-
-function kindOfIcing() {
-  const question = document.querySelector('.questionDiv')
-  const answersDiv = document.querySelector('.answersDiv')
-  const inputValue = document.getElementById('date').value
-  order.date = inputValue
-  question.innerHTML = 'What design will be going on your cupcakes?'
-  answersDiv.innerHTML = ''
-  const design = ['Solid Color', 'Special Design']
-  design.forEach(dBtn => {
-    const designBtn = document.createElement('button')
-    designBtn.classList.add('btn')
-    designBtn.innerHTML = dBtn
-    designBtn.value = dBtn
-    answersDiv.appendChild(designBtn)
-    designBtn.addEventListener('click', handleDesign)
-  })
-}
-
-function handleDesign(e) {
-  const design = e.target.value
-  if (design === 'Solid Color') {
-    const question = document.querySelector('.questionDiv')
-    const answersDiv = document.querySelector('.answersDiv')
-    question.innerHTML = 'What solid color would you like your cupcakes icing to be?'
-    answersDiv.innerHTML = ''
-    const icingColor = ['Red', 'Blue', 'Purple', 'Green', 'White']
-    icingColor.forEach(colorBtn => {
-      const button = document.createElement('button')
-      button.classList.add('btn')
-      button.innerHTML = colorBtn
-      button.value = colorBtn
-      answersDiv.appendChild(button)
-      button.addEventListener('click', handleSolidColor)
-    })
-  } else {
-    console.log('Special design')
-  }
-}
-
-function handleSolidColor(e) {
-  const color = e.target.value
-  order.solidIcingColor = color
-  const question = document.querySelector('.questionDiv')
-  const answersDiv = document.querySelector('.answersDiv')
-  question.innerHTML = 'What type of icing would you like?'
-  answersDiv.innerHTML = ''
-  const icingType = ['Cream Cheese', 'Sugar', 'Espresso']
-  icingType.forEach(icingTypeBtn => {
-    const button = document.createElement('button')
-    button.classList.add('btn')
-    button.innerHTML = icingTypeBtn
-    button.value = icingTypeBtn
-    answersDiv.appendChild(button)
-    button.addEventListener('click', handleIcingType)
-  })
-}
-
-function handleIcingType(e) {
-  const icingType = e.target.value
-  order.icingType = icingType
-  console.log(order)
-}
-
-function cupcakes() {
-  const question = document.querySelector('.questionDiv')
-  const answersDiv = document.querySelector('.answersDiv')
-  answersDiv.innerHTML = ""
-  const flavors = ['Vanilla', 'Chocolate', 'Red Velvet', 'Double Chocolate Chip', 'Mint Chocolate Chip', 'Lemon', 'Strawberry Cream']
-
-  flavors.forEach(flavor => {
-    const flavorBtn = document.createElement('button')
-    flavorBtn.classList.add('btn')
-    flavorBtn.innerHTML = flavor
-    flavorBtn.value = flavor
-    answersDiv.appendChild(flavorBtn)
-    flavorBtn.addEventListener('click', handleFlavor)
-  })
-
-  // console.log(e.target.value)
-  question.innerHTML = 'What flavor would you like?'
-}
-
-function cakes() {
-
-}
-
-function cookies() {
-
-}
-
-function handleDate(e) {
-  const quantity = e.target.value
-  order.quantity = quantity
-  const question = document.querySelector('.questionDiv')
-  const answersDiv = document.querySelector('.answersDiv')
-  question.innerHTML = "Please enter the date you would like your cupcakes:"
-  const input = document.querySelector('dateInput')
-  input.classList.remove('hide')
-  const inputBtn = document.createElement('button')
-  inputBtn.classList.add("btn")
-  inputBtn.innerHTML = "Next"
-  answersDiv.innerHTML = ""
-  answersDiv.appendChild(inputBtn)
-  inputBtn.addEventListener("click", kindOfIcing)
-}
+import MenuModal from '../../components/MenuModal/MenuModal'
 
 const OrderOnline = () => {
 
 
-
   return (
-    <div>
+    <>
       <Navigation />
-      <div className='flex justify-center mt-10 h-64'>
-        <button type="button" className="btn w-3/12 h-3/6 text-6xl" onClick={handleClick}>Place Order</button>
+      <div className='flex justify-center mt-9'>
+      <MenuModal />
       </div>
-      <div className='flex justify-center flex-col'>
-        <div className='questionDiv flex justify-center mb-10 text-4xl text-purple-600 ffLobsterTwo'></div>
-        <div className='answersDiv flex justify-center'>
-          <input id='dateInput' className='hide order-input'></input>
+      
+      <div className='container m-auto'>
+        <div className="mt-6">
+        <label for="countries_multiple" class="block italic mb-2 text-4xl font-medium flex justify-center text-purple-600">What would you like to order?</label>
+          <div className='flex justify-center mb-5'>
+            
+            <select multiple="" id="countries_multiple" class="bg-purple-200 border border-purple-600 text-purple-900 text-sm rounded-lg focus:border-purple-500 block w-1/2 p-2.5">
+              <option selected="cupcakes">Cupcakes</option>
+              <option value="cakes">Cakes</option>
+              <option value="cookies">Cookies</option>
+            </select>
+          </div>
+          <div>
+            <form>
+              <div class="relative z-0 mb-6 w-full group">
+                <input type="tel" name="first-name" class="block py-2.5 px-0 w-full text-sm text-gray-900 bg-purple-200 border-0 rounded-lg border-b-2 border-purple-600 appearance-none focus:outline-none focus:ring-0 focus:border-blue-600 peer" placeholder=" " required="" />
+                <label className='text-2xl text-purple-700 italic'>First Name:</label>
+              </div>
+              <div class="relative z-0 mb-6 w-full group">
+                <input type="tel" name="last-name" class="block py-2.5 px-0 w-full text-sm text-gray-900 bg-purple-200 border-0 border-b-2 rounded-lg border-purple-600 appearance-none focus:outline-none focus:ring-0 focus:border-blue-600 peer" placeholder=" " required="" />
+                <label className='text-2xl text-purple-700 italic'>Last Name:</label>
+              </div>
+              <div class="relative z-0 mb-6 w-full group">
+                <input type="tel" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" name="phone-number" id="floating_phone" class="block py-2.5 px-0 w-full rounded-lg text-sm text-gray-900 bg-purple-200 border-0 border-b-2 border-purple-600 appearance-none focus:outline-none focus:ring-0 focus:border-blue-600 peer" placeholder=" " required="" />
+                <label className='text-2xl text-purple-700 italic'>Phone number: (123-456-7890)</label>
+              </div>
+              <div class="relative z-0 mb-6 w-full group">
+                <input type="tel" name="email" class="block py-2.5 px-0 w-full text-sm text-gray-900 bg-purple-200 border-0 border-b-2 border-purple-600 rounded-lg appearance-none focus:outline-none focus:ring-0 focus:border-blue-600 peer" placeholder=" " required="" />
+                <label className='text-2xl text-purple-700 italic'>Email:</label>
+              </div>
+              <div class="relative z-0 mb-6 w-full group">
+                <input type="tel" name="event-date" class="block py-2.5 px-0 w-full text-sm text-gray-900 bg-purple-200 border-0 border-b-2 border-purple-600 rounded-lg appearance-none focus:outline-none focus:ring-0 focus:border-blue-600 peer" placeholder=" " required="" />
+                <label className='text-2xl text-purple-700 italic'>Event Date:</label>
+              </div>
+              <div class="relative z-0 mb-6 w-full group">
+                <input type="tel" name="event-date" class="block py-2.5 px-0 w-full text-sm text-gray-900 bg-purple-200 border-0 border-b-2 border-purple-600 rounded-lg appearance-none focus:outline-none focus:ring-0 focus:border-blue-600 peer" placeholder=" " required="" />
+                <label className='text-2xl text-purple-700 italic'>Flavor:</label>
+              </div>
+              <div class="relative z-0 mb-6 w-full group">
+                <input type="tel" name="event-date" class="block py-2.5 px-0 w-full text-sm text-gray-900 bg-purple-200 border-0 border-b-2 border-purple-600 rounded-lg appearance-none focus:outline-none focus:ring-0 focus:border-blue-600 peer" placeholder=" " required="" />
+                <label className='text-2xl text-purple-700 italic'>Event Date: (MM/DD/YYYY)</label>
+              </div>
+              <button type="submit" class="text-white bg-purple-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm w-full sm:w-auto px-5 py-2.5 text-center">Submit</button>
+            </form>
+          </div>
         </div>
       </div>
-    </div>
+    </>
   )
 }
 

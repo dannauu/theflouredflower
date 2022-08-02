@@ -1,13 +1,15 @@
 import React from 'react'
 import Navigation from '../Navigation/Navigation'
-import menu from '../../assets/img/menu.png'
+import Menu1 from '../../assets/img/1.png'
+import './Menu.css'
+
 
 const Menu = () => {
   return (
     <>
     <Navigation />
     <div className='flex justify-center'>
-      <img src={menu} alt="" className=''/>
+      <img src={Menu1} alt="" className='menuImg'/>
     </div>
     </>
   )
