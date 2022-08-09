@@ -16,7 +16,7 @@ const Gallery = () => {
     return (
         <div>
             <Navigation />
-            <h1 className='flex justify-center mt-10 text-5xl text-purple-600 ffLobsterTwo'>Check out my past work!</h1>
+            <h1 className='centerText flex justify-center mt-10 text-5xl text-purple-600 ffLobsterTwo'>Check out my past work!</h1>
             <div className='mt-10 mb-10'>
                 <div className={model ? "model open" : "model"}>
                     <img src={tempimgSrc} alt='' />
