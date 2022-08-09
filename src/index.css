@@ -175,7 +175,7 @@ code {
 }
 
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 435px) {
   .margin {
     margin: 10px
   }
