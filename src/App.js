@@ -34,7 +34,7 @@ function App() {
         </div>
       </nav>
       <Routes>
-        <Route path="/" element={<Home/>} />
+        <Route path="/theflouredflower" element={<Home/>} />
         <Route path="/gallery" element={<Gallery />} />
         <Route path="/menu" element={<Menu />} />
         <Route path="/order-online" element={<OrderOnline />} />
