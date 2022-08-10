@@ -1,5 +1,4 @@
 import React from 'react'
-import Navigation from '../Navigation/Navigation'
 // import Menu1 from '../../assets/img/1.png'
 import './Menu.css'
 import uniqid from 'uniqid'
@@ -10,7 +9,6 @@ import Footer from '../Footer/Footer'
 const Menu = () => {
   return (
     <>
-    <Navigation />
     <section className='bg-purple-200'>
       <div className='text-purple-800 text-6xl text-center ffLobsterTwo underline underline-offset-4'>Cakes</div>
       <div className='text-purple-800 text-3xl text-center mt-7 ffLobsterTwo underline underline-offset-4'>Flavors</div>

@@ -1,5 +1,4 @@
 import React from 'react'
-import Navigation from '../Navigation/Navigation'
 import emailjs from 'emailjs-com'
 
 
@@ -58,7 +57,6 @@ const OrderOnline = () => {
 
   return (
     <>
-      <Navigation />
       <h1 id='successh1' className='centerText hidden mt-10 flex justify-center text-6xl text-purple-400'>Thank you for your order! I will be in touch in the next 1-2 business days.</h1>
       <h2 id='successh2'className='centerText hidden flex justify-center text-purple-400 text-4xl mt-10'>In the meantime check out my past work in the<a href="/gallery" className='text-purple-900 text-4xl ml-2'>Gallery</a></h2>
       <div className='container m-auto width' id='formContainer'>

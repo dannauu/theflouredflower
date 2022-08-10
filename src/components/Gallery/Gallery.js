@@ -1,5 +1,4 @@
 import { useState } from 'react'
-import Navigation from '../Navigation/Navigation'
 import { AiOutlineClose } from "react-icons/ai";
 import Data from './Data'
 import Footer from '../Footer/Footer'
@@ -15,7 +14,6 @@ const Gallery = () => {
 
     return (
         <div>
-            <Navigation />
             <h1 className='centerText flex justify-center mt-10 text-5xl text-purple-600 ffLobsterTwo'>Check out my past work!</h1>
             <div className='mt-10 mb-10'>
                 <div className={model ? "model open" : "model"}>
