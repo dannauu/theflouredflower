@@ -2,7 +2,7 @@
   "name": "theflouredflower",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://dannauu.github.io/theflouredflower/",
+  "homepage": "https://dannauu.github.io",
   "dependencies": {
     "@headlessui/react": "^1.6.5",
     "@heroicons/react": "^1.0.6",
