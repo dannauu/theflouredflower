@@ -9,7 +9,7 @@ import OrderOnline from './components/OrderOnline/OrderOnline';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
-  <BrowserRouter>
+  <BrowserRouter basename='/theflowerflour'>
     <Routes>
       <Route path="/" element={<App />} />
       <Route path="gallery" element={<Gallery />} />
