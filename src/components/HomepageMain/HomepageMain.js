@@ -7,21 +7,21 @@ import { Link } from 'react-router-dom'
 const HomepageMain = () => {
   return (
     <div className='flex justify-evenly mt-20 mb-20 margin'>
-        <Link to="/order-online" className="imageA flex flex-col items-center border-purple-800 bg-purple-100 rounded-lg shadow-md md:flex-row md:max-w-xl hover:bg-purple-900">
+        <Link to="/menu" className="imageA flex flex-col items-center border-purple-800 bg-purple-100 rounded-lg shadow-md md:flex-row md:max-w-xl hover:bg-purple-900">
           <img className="image object-cover w-full h-full rounded-t-lg md:w-48 md:rounded-none md:rounded-l-lg" src={HomepageCardImg1} alt="" />
           <div className="flex flex-col justify-between p-4 leading-normal">
             <h5 className="textA mb-2 text-4xl font-bold tracking-tight text-purple-400 flex justify-center ffLobsterTwo">Cakes</h5>
             <p className="textp mb-3 font-normal text-gray-700 dark:text-gray-400 centerText text-center">Bring your online cake inspirations to life for yourself or a special someone.</p>
           </div>
         </Link>
-        <Link to="/order-online" className="imageA flex flex-col items-center bg-purple-100 rounded-lg border shadow-md md:flex-row md:max-w-xl hover:bg-purple-900">
+        <Link to="/menu" className="imageA flex flex-col items-center bg-purple-100 rounded-lg border shadow-md md:flex-row md:max-w-xl hover:bg-purple-900">
         <img className="image object-cover w-full h-full rounded-t-lg md:w-48 md:rounded-none md:rounded-l-lg" src={HomepageCardImg2} alt=""/>
           <div className="flex flex-col justify-between p-4 leading-normal">
             <h5 className="textA mb-2 text-4xl font-bold tracking-tight text-purple-400 flex justify-center ffLobsterTwo">Cookies</h5>
             <p className="textp mb-3 font-normal text-gray-700 dark:text-gray-400 centerText text-center">My custom cookies range from homemade chocolate chip to a decorated holiday event or party.</p>
           </div>
       </Link>
-      <Link to="/order-online" className="imageA flex flex-col items-center bg-purple-100 rounded-lg border-purple-400 shadow-md md:flex-row md:max-w-xl hover:bg-purple-900">
+      <Link to="/menu" className="imageA flex flex-col items-center bg-purple-100 rounded-lg border-purple-400 shadow-md md:flex-row md:max-w-xl hover:bg-purple-900">
           <div className="flex flex-col justify-between p-4 leading-normal">
             <h5 className="textA mb-2 text-4xl font-bold tracking-tight text-purple-400 flex justify-center ffLobsterTwo">Cupcakes</h5>
             <p className="textp mb-3 font-normal text-gray-700 dark:text-gray-400 centerText text-center">Let me bake your cupcakes as simple or gourmet as you want them to be. </p>
