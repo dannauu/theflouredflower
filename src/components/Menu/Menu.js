@@ -10,7 +10,7 @@ const Menu = () => {
     <>
     <section className='bg-purple-200 container m-auto rounded-xl mb-2' id='menu'>
       <h1 className='text-purple-800 text-8xl text-center ffLobsterTwo mb-10'>Menu</h1>
-      <div className='text-purple-800 text-5xl text-center ffLobsterTwo italic'>Cakes</div>
+      <div className='text-purple-800 text-5xl text-center ffLobsterTwo italic' id='cakes'>Cakes</div>
       <div className='text-purple-800 text-3xl text-center mt-7 ffLobsterTwo'>Flavors</div>
       <ul className='cakesUL'>
         {cakes.flavors.map((item) => (
@@ -37,7 +37,7 @@ const Menu = () => {
       </ul>
     </section>
     <section className='bg-purple-300 container m-auto rounded-xl mb-2'>
-      <div className='text-purple-800 text-5xl text-center ffLobsterTwo pt-3 italic'>Cupcakes</div>
+      <div className='text-purple-800 text-5xl text-center ffLobsterTwo pt-3 italic' id='cupcakes'>Cupcakes</div>
       <div className='text-purple-800 text-3xl text-center mt-7 ffLobsterTwo'>Flavors</div>
       <ul className='cakesUL'>
         {cakes.flavors.map((item) => (
@@ -60,7 +60,7 @@ const Menu = () => {
       <p className='text-purple-800 text-1xl text-center mt-3 italic font-bold pb-3'>Classic Cupcakes are $2.25/cupcake which includes a premium personalized name, date, and any other information wanted. Also includes icing or fondant flavors. </p>
     </section>
     <section className='bg-purple-200 container m-auto rounded-xl'>
-      <div className='text-purple-800 text-5xl text-center ffLobsterTwo italic'>Cookies</div>
+      <div className='text-purple-800 text-5xl text-center ffLobsterTwo italic' id='cookies'>Cookies</div>
       <div className='text-purple-800 text-3xl text-center mt-7 ffLobsterTwo'>Flavors</div>
       <ul className='cakesUL'>
         {cookies.flavors.map((item) => (
