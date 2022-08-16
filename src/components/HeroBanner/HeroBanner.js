@@ -1,5 +1,4 @@
 import heroBanner from '../../assets/img/herobanner1.jpg'
-import { Link } from 'react-router-dom'
 
 export default function Example() {
   return (
@@ -18,7 +17,7 @@ export default function Example() {
               <div className="margin sm:mt-8 sm:flex sm:justify-center lg:justify-start">
                 <div className="rounded-md shadow">
                   <a
-                    to="/order-online"
+                    href="#order-online"
                     className="w-full flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-white bg-fuchsia-800 shadow hover:bg-fuchsia-200 md:py-4 md:text-lg md:px-10"
                   >
                     Order Online
@@ -26,7 +25,7 @@ export default function Example() {
                 </div>
                 <div className="mt-3 sm:mt-0 sm:ml-3">
                   <a
-                    to="/gallery"
+                    href="#gallery"
                     className="w-full flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-black bg-fuchsia-200 hover:bg-fuchsia-800 md:py-4 md:text-lg md:px-10"
                   >
                     Gallery

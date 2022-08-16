@@ -20,6 +20,18 @@ const OrderOnline = () => {
   }
 
   function sendEmail(e) {
+
+    const phoneNumber = document.getElementById('floating_phone').value
+    const phoneNumberVal = /^\(?([0-9]{3})\)?[-. ]?([0-9]{3})[-. ]?([0-9]{4})$/
+    if (phoneNumber.match(phoneNumberVal)) {
+      showSuccess();
+      
+    } else {
+      alert("Wrong Phone Number Format");
+      e.preventDefault();
+      return false;
+    }
+
     e.preventDefault();
 
     emailjs
@@ -64,7 +76,6 @@ const OrderOnline = () => {
       window.location.href = "/theflouredflower";
     }, 4000);
 
-    console.log('asd')
   }
 
 
@@ -90,16 +101,16 @@ const OrderOnline = () => {
 
 
             <div className="relative z-0 mb-6 w-full group">
-              <input name="first-name" className="block py-2.5 px-0 w-full text-sm text-gray-900 bg-purple-200 border-0 rounded-lg border-b-2 border-purple-600 appearance-none focus:outline-none focus:ring-0 focus:border-blue-600 peer" placeholder=" " required="" />
+              <input name="first-name" className="block py-2.5 px-0 w-full text-sm text-gray-900 bg-purple-200 border-0 rounded-lg border-b-2 border-purple-600 appearance-none focus:outline-none focus:ring-0 focus:border-blue-600 peer" required />
               <label className='text-2xl text-purple-700 italic'>First Name:</label>
             </div>
             <div className="relative z-0 mb-6 w-full group">
-              <input name="last-name" className="block py-2.5 px-0 w-full text-sm text-gray-900 bg-purple-200 border-0 border-b-2 rounded-lg border-purple-600 appearance-none focus:outline-none focus:ring-0 focus:border-blue-600 peer" placeholder=" " required="" />
+              <input name="last-name" className="block py-2.5 px-0 w-full text-sm text-gray-900 bg-purple-200 border-0 border-b-2 rounded-lg border-purple-600 appearance-none focus:outline-none focus:ring-0 focus:border-blue-600 peer" required />
               <label className='text-2xl text-purple-700 italic'>Last Name:</label>
             </div>
             <div className="relative z-0 mb-6 w-full group">
-              <input type="tel" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" name="phone-number" id="floating_phone" className="block py-2.5 px-0 w-full rounded-lg text-sm text-gray-900 bg-purple-200 border-0 border-b-2 border-purple-600 appearance-none focus:outline-none focus:ring-0 focus:border-blue-600 peer" placeholder=" " required="" />
-              <label className='text-2xl text-purple-700 italic'>Phone number: (123-456-7890)</label>
+              <input type="tel" name="phone-number" id="floating_phone" className="block py-2.5 px-0 w-full rounded-lg text-sm text-gray-900 bg-purple-200 border-0 border-b-2 border-purple-600 appearance-none focus:outline-none focus:ring-0 focus:border-blue-600 peer" placeholder="555-555-5555" />
+              <label className='text-2xl text-purple-700 italic'>Phone number:</label>
             </div>
             <div className="relative z-0 mb-6 w-full group">
               <input type="email" name="email" className="block py-2.5 px-0 w-full text-sm text-gray-900 bg-purple-200 border-0 border-b-2 border-purple-600 rounded-lg appearance-none focus:outline-none focus:ring-0 focus:border-blue-600 peer" placeholder=" " required="" />
@@ -110,10 +121,10 @@ const OrderOnline = () => {
               <label className='text-2xl text-purple-700 italic' id='bakeryItemFlavor'>{flavor}</label>
             </div>
             <div className="relative z-0 mb-6 w-full group">
-              <input type="date" name="event-date" className="block py-2.5 px-0 w-full text-sm text-gray-900 bg-purple-200 border-0 border-b-2 border-purple-600 rounded-lg appearance-none focus:outline-none focus:ring-0 focus:border-blue-600 peer" placeholder=" " required="" />
-              <label className='text-2xl text-purple-700 italic'>Event Date: (MM/DD/YYYY)</label>
+              <input type="date" name="event-date" className="block py-2.5 px-0 w-full text-sm text-gray-900 bg-purple-200 border-0 border-b-2 border-purple-600 rounded-lg appearance-none focus:outline-none focus:ring-0 focus:border-blue-600 peer" placeholder=" " required="" id='date' />
+              <label className='text-2xl text-purple-700 italic'>Event Date:</label>
             </div>
-            <button type="submit" className="text-white bg-purple-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm w-full sm:w-auto px-5 py-2.5 text-center mb-2" onClick={showSuccess}>Submit</button>
+            <button type="submit" className="text-white bg-purple-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm w-full sm:w-auto px-5 py-2.5 text-center mb-2">Submit</button>
           </form>
 
         </div>
