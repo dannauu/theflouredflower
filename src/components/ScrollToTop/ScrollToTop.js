@@ -16,7 +16,7 @@ const ScrollToTop = () => {
   return isVisible ? (
     <div className='scroll-top  rounded-xl'>
       <a href='#top'>
-        <BsFillCaretUpFill className='text-4xl' />
+        <BsFillCaretUpFill className='text-6xl' />
       </a>
     </div>
   ) : null

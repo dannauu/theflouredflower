@@ -27,7 +27,7 @@ const OrderOnline = () => {
       ("service_zr4kcnh",
         "template_2egf2sb",
         e.target,
-        "-DqTEYSCXE7zt5HX")
+        "-DqTEYSCXE7zt5HXg")
       .then(
         (result) => {
           console.log(result.text);
@@ -110,7 +110,7 @@ const OrderOnline = () => {
               <label className='text-2xl text-purple-700 italic' id='bakeryItemFlavor'>{flavor}</label>
             </div>
             <div className="relative z-0 mb-6 w-full group">
-              <input type="tel" name="event-date" className="block py-2.5 px-0 w-full text-sm text-gray-900 bg-purple-200 border-0 border-b-2 border-purple-600 rounded-lg appearance-none focus:outline-none focus:ring-0 focus:border-blue-600 peer" placeholder=" " required="" />
+              <input type="date" name="event-date" className="block py-2.5 px-0 w-full text-sm text-gray-900 bg-purple-200 border-0 border-b-2 border-purple-600 rounded-lg appearance-none focus:outline-none focus:ring-0 focus:border-blue-600 peer" placeholder=" " required="" />
               <label className='text-2xl text-purple-700 italic'>Event Date: (MM/DD/YYYY)</label>
             </div>
             <button type="submit" className="text-white bg-purple-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm w-full sm:w-auto px-5 py-2.5 text-center mb-2" onClick={showSuccess}>Submit</button>
