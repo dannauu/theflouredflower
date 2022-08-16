@@ -1,7 +1,6 @@
 import { useState } from 'react'
 import { AiOutlineClose } from "react-icons/ai";
 import Data from './Data'
-import Footer from '../Footer/Footer'
 
 const Gallery = () => {
 
@@ -13,8 +12,8 @@ const Gallery = () => {
     }
 
     return (
-        <div>
-            <h1 className='centerText flex justify-center mt-10 text-5xl text-purple-600 ffLobsterTwo'>Check out my past work!</h1>
+        <div id='gallery'>
+            <h1 className='centerText flex justify-center mt-5 text-5xl text-purple-600 ffLobsterTwo'>Gallery</h1>
             <div className='mt-10 mb-10'>
                 <div className={model ? "model open" : "model"}>
                     <img src={tempimgSrc} alt='' />
@@ -31,7 +30,6 @@ const Gallery = () => {
                     }
                 </div>
             </div>
-            <Footer />
         </div>
     )
 }
