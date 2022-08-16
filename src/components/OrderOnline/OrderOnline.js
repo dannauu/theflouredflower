@@ -90,11 +90,11 @@ const OrderOnline = () => {
 
 
             <div className="relative z-0 mb-6 w-full group">
-              <input type="tel" name="first-name" className="block py-2.5 px-0 w-full text-sm text-gray-900 bg-purple-200 border-0 rounded-lg border-b-2 border-purple-600 appearance-none focus:outline-none focus:ring-0 focus:border-blue-600 peer" placeholder=" " required="" />
+              <input name="first-name" className="block py-2.5 px-0 w-full text-sm text-gray-900 bg-purple-200 border-0 rounded-lg border-b-2 border-purple-600 appearance-none focus:outline-none focus:ring-0 focus:border-blue-600 peer" placeholder=" " required="" />
               <label className='text-2xl text-purple-700 italic'>First Name:</label>
             </div>
             <div className="relative z-0 mb-6 w-full group">
-              <input type="tel" name="last-name" className="block py-2.5 px-0 w-full text-sm text-gray-900 bg-purple-200 border-0 border-b-2 rounded-lg border-purple-600 appearance-none focus:outline-none focus:ring-0 focus:border-blue-600 peer" placeholder=" " required="" />
+              <input name="last-name" className="block py-2.5 px-0 w-full text-sm text-gray-900 bg-purple-200 border-0 border-b-2 rounded-lg border-purple-600 appearance-none focus:outline-none focus:ring-0 focus:border-blue-600 peer" placeholder=" " required="" />
               <label className='text-2xl text-purple-700 italic'>Last Name:</label>
             </div>
             <div className="relative z-0 mb-6 w-full group">
@@ -102,15 +102,15 @@ const OrderOnline = () => {
               <label className='text-2xl text-purple-700 italic'>Phone number: (123-456-7890)</label>
             </div>
             <div className="relative z-0 mb-6 w-full group">
-              <input type="tel" name="email" className="block py-2.5 px-0 w-full text-sm text-gray-900 bg-purple-200 border-0 border-b-2 border-purple-600 rounded-lg appearance-none focus:outline-none focus:ring-0 focus:border-blue-600 peer" placeholder=" " required="" />
+              <input type="email" name="email" className="block py-2.5 px-0 w-full text-sm text-gray-900 bg-purple-200 border-0 border-b-2 border-purple-600 rounded-lg appearance-none focus:outline-none focus:ring-0 focus:border-blue-600 peer" placeholder=" " required="" />
               <label className='text-2xl text-purple-700 italic'>Email:</label>
             </div>
             <div className="relative z-0 mb-6 w-full group">
-              <input type="tel" name="flavor" className="block py-2.5 px-0 w-full text-sm text-gray-900 bg-purple-200 border-0 border-b-2 border-purple-600 rounded-lg appearance-none focus:outline-none focus:ring-0 focus:border-blue-600 peer" placeholder=" " required="" />
+              <input name="flavor" className="block py-2.5 px-0 w-full text-sm text-gray-900 bg-purple-200 border-0 border-b-2 border-purple-600 rounded-lg appearance-none focus:outline-none focus:ring-0 focus:border-blue-600 peer" placeholder=" " required="" />
               <label className='text-2xl text-purple-700 italic' id='bakeryItemFlavor'>{flavor}</label>
             </div>
             <div className="relative z-0 mb-6 w-full group">
-              <input type="tel" name="event-date" className="block py-2.5 px-0 w-full text-sm text-gray-900 bg-purple-200 border-0 border-b-2 border-purple-600 rounded-lg appearance-none focus:outline-none focus:ring-0 focus:border-blue-600 peer" placeholder=" " required="" />
+              <input name="event-date" className="block py-2.5 px-0 w-full text-sm text-gray-900 bg-purple-200 border-0 border-b-2 border-purple-600 rounded-lg appearance-none focus:outline-none focus:ring-0 focus:border-blue-600 peer" placeholder=" " required="" />
               <label className='text-2xl text-purple-700 italic'>Event Date: (MM/DD/YYYY)</label>
             </div>
             <button type="submit" className="text-white bg-purple-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm w-full sm:w-auto px-5 py-2.5 text-center mb-2" onClick={showSuccess}>Submit</button>
