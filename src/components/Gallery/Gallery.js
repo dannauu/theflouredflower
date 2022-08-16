@@ -13,7 +13,7 @@ const Gallery = () => {
 
     return (
         <div id='gallery'>
-            <h1 className='centerText flex justify-center mt-5 text-5xl text-purple-600 ffLobsterTwo'>Gallery</h1>
+            <h1 className='centerText flex justify-center mt-5 text-7xl text-purple-600 ffLobsterTwo'>Gallery</h1>
             <div className='mt-10 mb-10'>
                 <div className={model ? "model open" : "model"}>
                     <img src={tempimgSrc} alt='' />

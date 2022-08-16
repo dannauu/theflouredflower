@@ -9,7 +9,7 @@ const Menu = () => {
   return (
     <>
     <section className='bg-purple-200 container m-auto rounded-xl mb-2' id='menu'>
-      <h1 className='text-purple-800 text-8xl text-center ffLobsterTwo mb-10'>Menu</h1>
+      <h1 className='text-purple-800 text-7xl text-center ffLobsterTwo mb-10'>Menu</h1>
       <div className='text-purple-800 text-5xl text-center ffLobsterTwo italic' id='cakes'>Cakes</div>
       <div className='text-purple-800 text-3xl text-center mt-7 ffLobsterTwo'>Flavors</div>
       <ul className='cakesUL'>

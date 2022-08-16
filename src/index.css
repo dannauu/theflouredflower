@@ -153,9 +153,9 @@ code {
 
 @supports (background: paint(something)) {
   .heroContainer {
-    --extra-scallopRadius: 15; 
-    --extra-scallopColor: rgb(154, 43, 182); 
-    --extra-scallopWeight: 3; 
+    --extra-scallopRadius: 15;
+    --extra-scallopColor: rgb(154, 43, 182);
+    --extra-scallopWeight: 3;
 
     background: paint(extra-scallopedBorder);
     line-height: 1.5;
@@ -163,8 +163,8 @@ code {
 
   i {
     --extra-scallopRadius: 5;
-    --extra-scallopColor: #00eeff; 
-    --extra-scallopWeight: 1; 
+    --extra-scallopColor: #00eeff;
+    --extra-scallopWeight: 1;
 
     padding: 0.75rem;
 
@@ -172,7 +172,11 @@ code {
   }
 }
 
-@media screen and (max-width: 435px) {
+.hiddenLogo {
+  display: none;
+}
+
+/* @media screen and (max-width: 435px) {
   .margin {
     margin: 10px
   }
@@ -203,9 +207,8 @@ code {
   }
 
   .heroContainer {
-    --extra-scallopRadius: 0; 
-    --extra-scallopColor: 0
-    --extra-scallopWeight: 0; 
+    --extra-scallopRadius: 0;
+    --extra-scallopColor: 0 --extra-scallopWeight: 0;
 
     background: none;
     line-height: 0;
@@ -230,134 +233,108 @@ code {
     display: block;
   }
 
+} */
+
+.cakesUL {
+  max-width: 450px;
+  width: 95%;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.cakes-list-item {
+  margin: 0.5em;
+  border-radius: 10px;
+  padding: 0.5em;
+  color: rgb(147 51 234);
+  font-weight: 700;
+}
+
+.cupcakes-list-item {
+  margin: 0.5em;
+  border-radius: 10px;
+  padding: 0.5em;
+  color: rgb(147 51 234);
+  font-weight: 700;
+}
+
+.cookies-list-item {
+  margin: 0.5em;
+  border-radius: 10px;
+  padding: 0.5em;
+  color: rgb(147 51 234);
+  font-weight: 700;
+}
+
+@media screen and (max-width: 580px) {
+  .margin {
+    margin: 10px
   }
 
-  .cakesUL {
-    max-width: 450px;
-    width: 95%;
-    margin: 0 auto;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-  }
-  
-  .cakes-list-item {
-    margin: 0.5em;
-    border-radius: 10px;
-    padding: 0.5em;
-    color: rgb(147 51 234);
-    font-weight: 700;
-  }
-  .cupcakes-list-item {
-    margin: 0.5em;
-    border-radius: 10px;
-    padding: 0.5em;
-    color: rgb(147 51 234);
-    font-weight: 700;
-  }
-  .cookies-list-item {
-    margin: 0.5em;
-    border-radius: 10px;
-    padding: 0.5em;
-    color: rgb(147 51 234);
-    font-weight: 700;
+  .centerText {
+    text-align: center;
   }
 
-  @media screen and (max-width: 580px) {
-    .margin {
-      margin: 10px
-    }
-  
-    .centerText {
-      text-align: center;
-    }
-  
-    .textA {
-      font-size: 1.5rem;
-    }
-  
-    .textp {
-      font-size: 0.5rem
-    }
-  
-    .imageA {
-      width: 60%;
-      margin: auto;
-    }
-  
-    .image {
+  .textA {
+    font-size: 1.5rem;
+  }
+
+  .textp {
+    font-size: 0.5rem
+  }
+
+  .imageA {
+    width: 60%;
+    margin: auto;
+  }
+
+  .image {
       display: none;
     }
-  
-    .width {
-      width: 90%
-    }
-  
-    .heroContainer {
-      --extra-scallopRadius: 0; 
-      --extra-scallopColor: 0
-      --extra-scallopWeight: 0; 
-  
-      background: none;
-      line-height: 0;
-    }
-  
-    .menuImg {
-      width: 420px !important;
-    }
-  
-    .navbar {
-      flex-direction: row;
-      margin: auto;
-    }
-  
-    .centerContent {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-    }
-  
-    .homeButton {
+
+    .hiddenLogo {
       display: block;
     }
-  
-    }
-  
-    .cakesUL {
-      max-width: 450px;
-      width: 95%;
-      margin: 0 auto;
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-    }
-    
-    .cakes-list-item {
-      margin: 0.5em;
-      border-radius: 10px;
-      padding: 0.5em;
-      color: rgb(147 51 234);
-      font-weight: 700;
-    }
-    .cupcakes-list-item {
-      margin: 0.5em;
-      border-radius: 10px;
-      padding: 0.5em;
-      color: rgb(147 51 234);
-      font-weight: 700;
-    }
-    .cookies-list-item {
-      margin: 0.5em;
-      border-radius: 10px;
-      padding: 0.5em;
-      color: rgb(147 51 234);
-      font-weight: 700;
-    }
-  
-  @media screen and (-webkit-min-device-pixel-ratio:0) { 
+
+  .width {
+    width: 90%
+  }
+
+  .heroContainer {
+    --extra-scallopRadius: 0;
+    --extra-scallopColor: 0 --extra-scallopWeight: 0;
+
+    background: none;
+    line-height: 0;
+  }
+
+  .menuImg {
+    width: 420px !important;
+  }
+
+  .navbar {
+    flex-direction: row;
+    margin: auto;
+  }
+
+  .centerContent {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .homeButton {
+    display: block;
+  }
+
+}
+
+@media screen and (-webkit-min-device-pixel-ratio:0) { 
     select,
     textarea,
     input {
       font-size: 16px;
     }
-  }
+}
