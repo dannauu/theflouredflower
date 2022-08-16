@@ -7,7 +7,7 @@ function App() {
     <>
       <nav className="bg-white border-purple-400 px-2 sm:px-4 py-2.5 border-b-4 navbar">
         <div className="container flex flex-wrap justify-between items-center mx-auto">
-          <a href="/" className="flex items-center">
+          <a href="/theflouredflower" className="flex items-center">
             <span className="self-center text-4xl font-semibold whitespace-nowrap logo text-purple-600 hover:text-purple-400 logo image">The Floured Flour</span>
           </a>
           <div className="w-full md:block md:w-auto centerContent" id="mobile-menu">
