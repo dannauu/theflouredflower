@@ -1,0 +1,37 @@
+{
+  "files": {
+    "main.css": "/theflouredflower/static/css/main.c9664846.css",
+    "main.js": "/theflouredflower/static/js/main.abb1bf22.js",
+    "static/media/Img5.jpg": "/theflouredflower/static/media/Img5.350ec221f0c3203b7beb.jpg",
+    "static/media/Img6.jpg": "/theflouredflower/static/media/Img6.e06ae5a78b8b85ec535e.jpg",
+    "static/media/Img7.jpg": "/theflouredflower/static/media/Img7.ec1b0fe68ab2ec6f8584.jpg",
+    "static/media/Img4.jpg": "/theflouredflower/static/media/Img4.86b3de74b6c390383541.jpg",
+    "static/media/Img2.jpg": "/theflouredflower/static/media/Img2.b9e60e389a648014080e.jpg",
+    "static/media/Img14.jpg": "/theflouredflower/static/media/Img14.e064db6ac79887ef101a.jpg",
+    "static/media/Img9.jpg": "/theflouredflower/static/media/Img9.b4a9d5517cbbd03c95cd.jpg",
+    "static/media/Img12.jpg": "/theflouredflower/static/media/Img12.359e686be7d8447ecd8f.jpg",
+    "static/media/Img3.jpg": "/theflouredflower/static/media/Img3.7e2c4749d9c9394da84c.jpg",
+    "static/media/Img13.jpg": "/theflouredflower/static/media/Img13.1dea0a3be0d0feff5a1b.jpg",
+    "static/media/Img8.jpg": "/theflouredflower/static/media/Img8.fbb30fe2f27d93061c5e.jpg",
+    "static/media/Img15.jpg": "/theflouredflower/static/media/Img15.fb29f7a56aebc8f1a00b.jpg",
+    "static/media/Img11.jpg": "/theflouredflower/static/media/Img11.98cf321db3bdd2f41087.jpg",
+    "static/media/Img1.jpg": "/theflouredflower/static/media/Img1.dae223445c352f9d765a.jpg",
+    "static/media/HomepageCardImg3.jpg": "/theflouredflower/static/media/HomepageCardImg3.561d39d34a22174f6428.jpg",
+    "static/media/Img18.jpg": "/theflouredflower/static/media/Img18.37295e392339ad90c901.jpg",
+    "static/media/Img20.jpg": "/theflouredflower/static/media/Img20.5ea5deaa1577bd1b9a35.jpg",
+    "static/media/Img10.jpg": "/theflouredflower/static/media/Img10.d6c84db5f7ecc926c86b.jpg",
+    "static/media/personalizedcakes.avif": "/theflouredflower/static/media/personalizedcakes.71da7853edd718c489bb.avif",
+    "static/media/customcookies.jpg": "/theflouredflower/static/media/customcookies.16dd8d46660ec1150809.jpg",
+    "static/media/herobanner1.jpg": "/theflouredflower/static/media/herobanner1.6af2008777187a3389a9.jpg",
+    "static/media/Img19.jpg": "/theflouredflower/static/media/Img19.4f559011eb512fcf8ae9.jpg",
+    "static/media/Img16.jpg": "/theflouredflower/static/media/Img16.44b92f80d58d178c13ee.jpg",
+    "static/media/Img17.jpg": "/theflouredflower/static/media/Img17.28d5df5f92b242fb802b.jpg",
+    "index.html": "/theflouredflower/index.html",
+    "main.c9664846.css.map": "/theflouredflower/static/css/main.c9664846.css.map",
+    "main.abb1bf22.js.map": "/theflouredflower/static/js/main.abb1bf22.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.c9664846.css",
+    "static/js/main.abb1bf22.js"
+  ]
+}
