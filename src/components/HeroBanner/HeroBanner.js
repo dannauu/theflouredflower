@@ -7,7 +7,7 @@ export default function Example() {
         <div className="heroContainer relative z-10 pb-8 bg-purple-100 sm:pb-16 md:pb-20 lg:max-w-2xl lg:w-full lg:pb-28 xl:pb-32 rounded flex justify-center">
           <main className="mt-10 margin mx-auto max-w-7xl px-4 sm:mt-12 sm:px-6 md:mt-16 lg:mt-20 lg:px-8 xl:mt-28">
             <div className="sm:text-center lg:text-left">
-              <h1 className="self-center text-5xl font-semibold whitespace-nowrap logo text-fuchsia-800 hover:text-purple-400 logo hiddenLogo">The Floured Flower</h1>
+              <h1 className="self-center text-5xl font-semibold whitespace-nowrap logo text-fuchsia-900 hover:text-purple-400 logo hiddenLogo">The Floured Flower</h1>
               <h2 className="image margin text-4xl tracking-tight font-extrabold text-gray-900 sm:text-5xl md:text-6xl">
                 <span className="centerText block xl:inline text-fuchsia-800">Custom Cakes</span>{' '}
                 <span className="centerText block text-fuchsia-200 xl:inline">and Cupcakes</span>
