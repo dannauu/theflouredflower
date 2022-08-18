@@ -1,5 +1,6 @@
 import React from 'react'
 import emailjs from 'emailjs-com'
+import MenuModal from '../MenuModal/MenuModal'
 
 
 
@@ -98,6 +99,8 @@ const OrderOnline = () => {
                 <option value="cookies">Cookies</option>
               </select>
             </div>
+
+            <MenuModal />
 
 
             <div className="relative z-0 mb-6 w-full group">
