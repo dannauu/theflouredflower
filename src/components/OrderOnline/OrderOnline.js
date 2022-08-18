@@ -105,7 +105,7 @@ const OrderOnline = () => {
 
 
             <div className="relative z-0 mb-6 w-full group">
-              <input name="first-name" className="block py-2.5 px-0 w-full text-sm text-gray-900 bg-purple-200 border-0 rounded-lg border-b-2 border-purple-600 appearance-none focus:outline-none focus:ring-0 focus:border-blue-600 peer" required />
+              <input name="first-name" className="block py-2.5 px-0 w-full text-sm text-gray-900 bg-purple-200 border-0 rounded-lg border-b-2 border-purple-600 appearance-none focus:outline-none focus:ring-0 focus:border-blue-600 peer"  required />
               <label className='text-2xl text-purple-700 italic'>First Name:</label>
             </div>
             <div className="relative z-0 mb-6 w-full group">
@@ -113,11 +113,11 @@ const OrderOnline = () => {
               <label className='text-2xl text-purple-700 italic'>Last Name:</label>
             </div>
             <div className="relative z-0 mb-6 w-full group">
-              <input type="tel" name="phone-number" id="floating_phone" className="block py-2.5 px-0 w-full rounded-lg text-sm text-gray-900 bg-purple-200 border-0 border-b-2 border-purple-600 appearance-none focus:outline-none focus:ring-0 focus:border-blue-600 peer" placeholder="555-555-5555" />
+              <input type="tel" name="phone-number" id="floating_phone" className="block py-2.5 px-0 w-full rounded-lg text-sm text-gray-900 bg-purple-200 border-0 border-b-2 border-purple-600 appearance-none focus:outline-none focus:ring-0 focus:border-blue-600 peer" placeholder='555-555-5555'/>
               <label className='text-2xl text-purple-700 italic'>Phone number:</label>
             </div>
             <div className="relative z-0 mb-6 w-full group">
-              <input type="email" name="email" className="block py-2.5 px-0 w-full text-sm text-gray-900 bg-purple-200 border-0 border-b-2 border-purple-600 rounded-lg appearance-none focus:outline-none focus:ring-0 focus:border-blue-600 peer" placeholder=" " required="" />
+              <input type="email" name="email" className="block py-2.5 px-0 w-full text-sm text-gray-900 bg-purple-200 border-0 border-b-2 border-purple-600 rounded-lg appearance-none focus:outline-none focus:ring-0 focus:border-blue-600 peer"required="" />
               <label className='text-2xl text-purple-700 italic'>Email:</label>
             </div>
             <div className="relative z-0 mb-6 w-full group">

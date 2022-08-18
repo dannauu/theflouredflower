@@ -8,7 +8,7 @@ export default function Example() {
           <main className="mt-10 margin mx-auto max-w-7xl px-4 sm:mt-12 sm:px-6 md:mt-16 lg:mt-20 lg:px-8 xl:mt-28">
             <div className="sm:text-center lg:text-left">
               <h1 className="self-center text-5xl font-semibold whitespace-nowrap logo text-fuchsia-800 hover:text-purple-400 logo hiddenLogo">The Floured Flower</h1>
-              <h2 className="margin text-4xl tracking-tight font-extrabold text-gray-900 sm:text-5xl md:text-6xl">
+              <h2 className="image margin text-4xl tracking-tight font-extrabold text-gray-900 sm:text-5xl md:text-6xl">
                 <span className="centerText block xl:inline text-fuchsia-800">Custom Cakes</span>{' '}
                 <span className="centerText block text-fuchsia-200 xl:inline">and Cupcakes</span>
               </h2>
