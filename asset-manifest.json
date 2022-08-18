@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/theflouredflower/static/css/main.45281cd7.css",
-    "main.js": "/theflouredflower/static/js/main.6f2a582a.js",
+    "main.css": "/theflouredflower/static/css/main.677c6778.css",
+    "main.js": "/theflouredflower/static/js/main.e7fb7763.js",
     "static/media/Img5.jpg": "/theflouredflower/static/media/Img5.350ec221f0c3203b7beb.jpg",
     "static/media/Img6.jpg": "/theflouredflower/static/media/Img6.e06ae5a78b8b85ec535e.jpg",
     "static/media/Img7.jpg": "/theflouredflower/static/media/Img7.ec1b0fe68ab2ec6f8584.jpg",
@@ -27,11 +27,11 @@
     "static/media/Img16.jpg": "/theflouredflower/static/media/Img16.44b92f80d58d178c13ee.jpg",
     "static/media/Img17.jpg": "/theflouredflower/static/media/Img17.28d5df5f92b242fb802b.jpg",
     "index.html": "/theflouredflower/index.html",
-    "main.45281cd7.css.map": "/theflouredflower/static/css/main.45281cd7.css.map",
-    "main.6f2a582a.js.map": "/theflouredflower/static/js/main.6f2a582a.js.map"
+    "main.677c6778.css.map": "/theflouredflower/static/css/main.677c6778.css.map",
+    "main.e7fb7763.js.map": "/theflouredflower/static/js/main.e7fb7763.js.map"
   },
   "entrypoints": [
-    "static/css/main.45281cd7.css",
-    "static/js/main.6f2a582a.js"
+    "static/css/main.677c6778.css",
+    "static/js/main.e7fb7763.js"
   ]
 }
