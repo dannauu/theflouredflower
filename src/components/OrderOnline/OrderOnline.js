@@ -84,6 +84,7 @@ const OrderOnline = () => {
   return (
     <>
       <h1 id='successh1' className='centerText hidden mt-10 flex justify-center text-6xl text-purple-400'>Thank you for your order! Check your email!</h1>
+      <MenuModal />
       <h2 className='centerText hidden flex justify-center text-6xl text-purple-400 mt-6' id='Redirecting'>Redirecting to home in</h2>
       <h3 className='centerText hidden flex justify-center text-6xl text-green-400' id='RedirectingTimer'></h3>
       <div className='container m-auto width' id='formContainer'>
@@ -100,7 +101,7 @@ const OrderOnline = () => {
               </select>
             </div>
 
-            <MenuModal />
+            
 
 
             <div className="relative z-0 mb-6 w-full group">

@@ -19,7 +19,7 @@ const MenuModal = () => {
     setIsOpen(false);
   }
     return (
-        <div className='mb-4 font-medium rounded-md text-white bg-fuchsia-800 w-1/4 m-auto'>
+        <div className='mb-4 font-medium rounded-md text-white bg-fuchsia-800 w-1/4 m-auto text-center'>
           <button onClick={openModal}>Open Menu</button>
           <Modal
             isOpen={modalIsOpen}
