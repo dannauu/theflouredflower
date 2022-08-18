@@ -57,7 +57,7 @@ const Menu = () => {
       <div className='text-purple-800 text-3xl text-center mt-7 ffLobsterTwo' >Pricing</div>
       <p className='text-purple-800 text-1xl text-center mt-3 italic font-bold pl-2 pr-2'>Classic Cupcakes are $18.00/dozen which includes a classic flavor and a single color icing swirl.</p>
       <p className='text-purple-800 text-1xl text-center mt-3 italic font-bold pl-2 pr-2'>Premium Cupcakes are $21.00/dozen which includes a premium flavor and a single or multi colored icing swirl.</p>
-      <p className='text-purple-800 text-1xl text-center mt-3 italic font-bold pl-2 pr-2 pb-3'>Classic Cupcakes are $2.25/cupcake which includes a premium personalized name, date, and any other information wanted. Also includes icing or fondant flavors. </p>
+      <p className='text-purple-800 text-1xl text-center mt-3 italic font-bold pl-2 pr-2 pb-3'>Classic Cupcakes are $2.25/cupcake which includes a premium personal name, date, and any other information wanted. Also includes icing or fondant flavors. </p>
     </section>
     <section className='bg-purple-200 container m-auto rounded-xl'>
       <div className='text-purple-800 text-5xl text-center ffLobsterTwo italic' id='cookies'>Cookies</div>
