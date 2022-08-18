@@ -54,6 +54,8 @@ const OrderOnline = () => {
 
   function showSuccess() {
     const formContainer = document.getElementById('formContainer')
+    const menuModal = document.getElementById('menuModal')
+    menuModal.classList.add('hidden')
     formContainer.classList.add('hidden')
     const successh1 = document.getElementById('successh1')
     successh1.classList.remove('hidden')
@@ -86,7 +88,7 @@ const OrderOnline = () => {
       <h1 id='successh1' className='centerText hidden mt-10 flex justify-center text-6xl text-purple-400'>Thank you for your order! Check your email!</h1>
       <MenuModal />
       <h2 className='centerText hidden flex justify-center text-6xl text-purple-400 mt-6' id='Redirecting'>Redirecting to home in</h2>
-      <h3 className='centerText hidden flex justify-center text-6xl text-green-400' id='RedirectingTimer'></h3>
+      <div className='centerText hidden flex justify-center text-6xl text-green-400' id='RedirectingTimer'></div>
       <div className='container m-auto width' id='formContainer'>
         <div className="mt-6" id='order-online'>
           <label htmlFor="countries_multiple" className="block italic mb-2 text-4xl font-medium flex justify-center text-purple-600 centerText">What would you like to order?</label>

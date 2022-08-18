@@ -14,7 +14,7 @@ const cookies = {
 
 const cupcakes = {
     flavors: [
-        'Chocolate', 'Vanilla', 'Strawberry'
+        'Chocolate', 'Vanilla', 'Strawberry', 'Lemon', 'Red Velvet', 'Orange',
     ], 
     premiumFlavors: ['Espresso/Coffee', 'Pumpkin Spice', 'Apple Cider'],
 }
