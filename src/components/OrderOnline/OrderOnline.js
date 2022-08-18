@@ -59,25 +59,7 @@ const OrderOnline = () => {
     formContainer.classList.add('hidden')
     const successh1 = document.getElementById('successh1')
     successh1.classList.remove('hidden')
-    const Redirecting = document.getElementById('Redirecting');
-    Redirecting.classList.remove('hidden');
-    const RedirectingTimer = document.getElementById('RedirectingTimer');
-    RedirectingTimer.classList.remove('hidden');
-    var timeleft = 4;
-    setInterval(function () {
-      document.getElementById("RedirectingTimer").innerHTML = timeleft + " seconds";
-      // if (timeleft <= 0) {
-      // } else {
-      //   document.getElementById("RedirectingTimer").innerHTML = timeleft + " seconds";
-      // }
-      timeleft -= 1;
-    }, 1000);
-
-    window.setTimeout(function () {
-
-      // Move to a new location or you can do something else
-      window.location.href = "/theflouredflower";
-    }, 4000);
+ 
 
   }
 
@@ -85,10 +67,8 @@ const OrderOnline = () => {
 
   return (
     <>
-      <h1 id='successh1' className='centerText hidden mt-10 flex justify-center text-6xl text-purple-400'>Thank you for your order! Check your email!</h1>
+      <h1 id='successh1' className='centerText hidden mt-10 flex justify-center text-6xl text-purple-400 mb-10'>Thank you for your order! Check your email!</h1>
       <MenuModal />
-      <h2 className='centerText hidden flex justify-center text-6xl text-purple-400 mt-6' id='Redirecting'>Redirecting to home in</h2>
-      <div className='centerText hidden flex justify-center text-6xl text-green-400' id='RedirectingTimer'></div>
       <div className='container m-auto width' id='formContainer'>
         <div className="mt-6" id='order-online'>
           <label htmlFor="countries_multiple" className="block italic mb-2 text-4xl font-medium flex justify-center text-purple-600 centerText">What would you like to order?</label>
