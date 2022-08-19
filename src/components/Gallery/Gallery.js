@@ -1,7 +1,7 @@
 import { useState } from 'react'
 import { AiOutlineClose } from "react-icons/ai";
 import Data from './Data'
-import Zoom from 'react-reveal/Zoom';
+import Pulse from 'react-reveal/Pulse';
 
 const Gallery = () => {
 
@@ -23,11 +23,11 @@ const Gallery = () => {
                 <div className='gallery'>
                     {Data.map((item, index) => {
                         return (
-                            <Zoom top>
+                            <Pulse>
                             <div className='pics' key={index} onClick={() => getImg(item.imgSrc)}>
                                 <img src={item.imgSrc} className='galleryImg' alt='' />
                             </div>
-                            </Zoom>
+                            </Pulse>
                         )
                     })
                     }
