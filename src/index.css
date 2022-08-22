@@ -285,8 +285,6 @@ code {
   .textp {
     font-size: 0.5rem;
     color: purple;
-    background-color: rgba(198, 198, 198, 0.459);
-    border-radius: 5px;
   }
 
   .imageA {
@@ -296,21 +294,6 @@ code {
 
   .image {
     display: none;
-  }
-
-  .cookiesImage {
-    background: url(../src/assets/img/customcookies.jpg);
-    background-size: cover;
-  }
-
-  .cupcakesImage {
-    background: url(../src/assets/img/HomepageCardImg3.jpg);
-    background-size: cover;
-  }
-
-  .cakesImage {
-    background: url(../src/assets/img/personalizedcakes.avif);
-    background-size: cover;
   }
 
   .hiddenLogo {

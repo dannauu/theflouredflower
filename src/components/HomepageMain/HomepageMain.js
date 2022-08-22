@@ -9,7 +9,7 @@ const HomepageMain = () => {
     
     <div className='flex justify-evenly mt-20 mb-20 margin'>
       <Fade bottom>
-        <a href="#cakes" className="imageA cakesImage flex flex-col items-center border-purple-800 bg-purple-100 rounded-lg shadow-md md:flex-row md:max-w-xl hover:bg-purple-900">
+        <a href="#cakes" className="imageA flex flex-col items-center border-purple-800 bg-purple-100 rounded-lg shadow-md md:flex-row md:max-w-xl hover:bg-purple-900">
           <img className="image object-cover w-full h-full rounded-t-lg md:w-48 md:rounded-none md:rounded-l-lg" src={HomepageCardImg1} alt="" />
           <div className="flex flex-col justify-between p-4 leading-normal">
             <h5 className="textA mb-2 text-4xl font-bold tracking-tight text-purple-600 flex justify-center ffLobsterTwo">Cakes</h5>
@@ -18,7 +18,7 @@ const HomepageMain = () => {
         </a>
         </Fade>
         <Fade top>
-        <a href="#cookies" className="imageA cookiesImage flex flex-col items-center bg-purple-100 rounded-lg border shadow-md md:flex-row md:max-w-xl hover:bg-purple-900">
+        <a href="#cookies" className="imageA flex flex-col items-center bg-purple-100 rounded-lg border shadow-md md:flex-row md:max-w-xl hover:bg-purple-900">
         <img className="image object-cover w-full h-full rounded-t-lg md:w-48 md:rounded-none md:rounded-l-lg" src={HomepageCardImg2} alt=""/>
           <div className="flex flex-col justify-between p-4 leading-normal">
             <h5 className="textA mb-2 text-4xl font-bold tracking-tight text-purple-600 flex justify-center ffLobsterTwo">Cookies</h5>
@@ -27,7 +27,7 @@ const HomepageMain = () => {
       </a>
       </Fade>
       <Fade bottom>
-      <a href="#cupcakes" className="imageA cupcakesImage flex flex-col items-center bg-purple-100 rounded-lg border-purple-400 shadow-md md:flex-row md:max-w-xl hover:bg-purple-900">
+      <a href="#cupcakes" className="imageA flex flex-col items-center bg-purple-100 rounded-lg border-purple-400 shadow-md md:flex-row md:max-w-xl hover:bg-purple-900">
           <div className="flex flex-col justify-between p-4 leading-normal">
             <h5 className="textA mb-2 text-4xl font-bold tracking-tight text-purple-600 flex justify-center ffLobsterTwo">Cupcakes</h5>
             <p className="textp mb-3 font-normal text-gray-700 centerText text-center">Let me bake your cupcakes as simple or gourmet as you want them to be. </p>

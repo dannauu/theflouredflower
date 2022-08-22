@@ -15,7 +15,7 @@ export default function Example() {
                 <span className="centerText block xl:inline text-fuchsia-800">Custom Cakes</span>{' '}
                 <span className="centerText block text-fuchsia-200 xl:inline">and Cupcakes</span>
               </h2>
-              <p className="margin font-bold text-base text-black sm:mt-5 sm:text-lg sm:max-w-xl sm:mx-auto md:mt-5 md:text-xl lg:mx-0 centerText">
+              <p className="margin font-bold text-base text-purple-800 sm:mt-5 sm:text-lg sm:max-w-xl sm:mx-auto md:mt-5 md:text-xl lg:mx-0 centerText">
                 I specialize in cakes and cupcakes. I make my own fondant out of marshmallow (so it actually tastes good!) I also offer gluten-free and sugar-free cake options.
               </p>
               <div className="margin sm:mt-8 sm:flex sm:justify-center lg:justify-start">
