@@ -7,7 +7,7 @@ import Slide from 'react-reveal/Slide';
 
 const Menu = () => {
   return (
-    <>
+    <div className='men'>
     <Slide left>
     <section className='bg-purple-200 container m-auto rounded-xl mb-2' id='menu'>
       <h1 className='text-purple-800 text-7xl text-center ffLobsterTwo mb-10'>Menu</h1>
@@ -97,7 +97,7 @@ const Menu = () => {
       <p className='text-purple-800 text-1xl text-center mt-3 italic font-bold pb-2'>These cookies are special ordered with royal icing designs. These cookies are more complex and require a phone consultation before a price can be quoted.</p>
     </section>
     </Slide>
-    </>
+    </div>
   )
 }
 
