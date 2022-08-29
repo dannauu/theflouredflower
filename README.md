@@ -5,3 +5,6 @@ This single page application was built with [Create React App](https://github.co
 ## Visit Website here:
 [The Floured Flower](https://www.theflouredflower.com/)
 
+## Screenshots
+
+![TheFlouredFlower.com](./src/assets/img/READMEgif.gif)
