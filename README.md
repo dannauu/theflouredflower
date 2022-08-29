@@ -7,4 +7,4 @@ This single page application was built with [Create React App](https://github.co
 
 ## Screenshots
 
-![TheFlouredFlower.com](./src/assets/img/READMEgif.gif)
+![TheFlouredFlower](./src/assets/img/READMEgif.gif)
