@@ -1,11 +1,28 @@
 import React from 'react'
 import emailjs from 'emailjs-com'
 import MenuModal from '../MenuModal/MenuModal'
+import ThankYou from '../ThankYou/ThankYou';
+import Modal from 'react-modal';
 
 
 
 
 const OrderOnline = () => {
+  let subtitle;
+  const [modalIsOpen, setIsOpen] = React.useState(false);
+
+  function openModal() {
+    setIsOpen(true);
+  }
+
+  function afterOpenModal() {
+    // references are now sync'd and can be accessed.
+    subtitle.style.color = '#f00';
+  }
+
+  function closeModal() {
+    setIsOpen(false);
+  }
 
 
   function sendEmail(e) {
@@ -25,7 +42,6 @@ const OrderOnline = () => {
         }
       );
        e.preventDefault()
-      window.location.href = '#gallery'
 
   }
 
@@ -68,10 +84,15 @@ const OrderOnline = () => {
               <label className='text-2xl text-rose-900 italic'>Event Date:</label>
               <input type="date" name="event-date" className="block py-2.5 px-0 w-full text-sm text-gray-900 bg-white border-0 border-b-2 border-rose-900 rounded-lg appearance-none focus:outline-none focus:ring-0 focus:border-rose-300 peer" placeholder=" " required="" id='date' />
             </div>
-            <button type="submit" className="text-white bg-rose-700 hover:bg-rose-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm w-full sm:w-auto px-5 py-2.5 text-center mb-2">Submit</button>
+            <button type="submit" onClick={openModal} className="text-white bg-rose-700 hover:bg-rose-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm w-full sm:w-auto px-5 py-2.5 text-center mb-2">Submit</button>
           </form>
         </div>
       </div>
+      <Modal
+        isOpen={modalIsOpen}
+        onAfterOpen={afterOpenModal}
+        onRequestClose={closeModal}
+        contentLabel="Example Modal"><ThankYou/></Modal>
     </>
   )
 }
