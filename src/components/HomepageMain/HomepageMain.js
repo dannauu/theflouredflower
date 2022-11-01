@@ -5,7 +5,7 @@ import HomepageCardImg3 from '../../assets/img/christmasCupcake.jpg'
 
 const HomepageMain = () => {
   return (
-    <div className='flex justify-evenly mt-20 mb-20 margin'>
+    <div className='flex justify-evenly mt-2 mb-5 margin'>
         <a href="#cakes" className="imageA flex flex-col items-center border-purple-800 bg-rose-100 rounded-lg shadow-md md:flex-row md:max-w-xl hover:bg-rose-400">
           <img className="image object-cover w-full h-full rounded-t-lg md:w-48 md:rounded-none md:rounded-l-lg" src={HomepageCardImg1} alt="" />
           <div className="flex flex-col justify-between p-4 leading-normal">

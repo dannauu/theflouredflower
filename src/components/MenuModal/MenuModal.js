@@ -1,5 +1,6 @@
 import React from 'react';
 import Modal from 'react-modal';
+import HolidayMenu from '../HolidayMenu/HolidayMenu';
 import Menu from '../Menu/Menu';
 
 const MenuModal = () => {
@@ -25,7 +26,7 @@ const MenuModal = () => {
             isOpen={modalIsOpen}
             onAfterOpen={afterOpenModal}
             onRequestClose={closeModal}
-            contentLabel="Example Modal"><Menu/></Modal>
+            contentLabel="Example Modal"><HolidayMenu/><Menu/></Modal>
         </div>
       );
 }

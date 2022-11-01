@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Lobster+Two&family=Questrial&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Mountains+of+Christmas:wght@700&display=swap');
 
 body {
   margin: 0;
@@ -377,7 +378,8 @@ input {
 }
 
 .menuBackground {
-  background-color: #877b77;
+  background-image: url('./assets/img/menuBackground1.jpg');
+  background-size: cover;
 }
 
 .maroon {
@@ -386,4 +388,13 @@ input {
 
 .green {
   color: rgb(20 83 45)
+}
+
+.christmasFont {
+  font-family: 'Mountains of Christmas', cursive;
+}
+
+.holidayMenuBG {
+  background-image: url(./assets/img/holidayMenuBG.jpg);
+  background-size: cover;
 }

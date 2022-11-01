@@ -40,7 +40,7 @@ const Menu = () => {
       <div className='green text-5xl text-center ffLobsterTwo pt-3 italic' id='cupcakes'>Cupcakes</div>
       <div className='green text-3xl text-center mt-7 ffLobsterTwo'>Flavors</div>
       <ul className='cakesUL'>
-        {cakes.flavors.map((item) => (
+        {cupcakes.flavors.map((item) => (
           <li key={uniqid()} className='cupcakes-list-item'>
             {item}
           </li>
@@ -48,7 +48,7 @@ const Menu = () => {
       </ul>
       <div className='green text-3xl text-center mt-7 ffLobsterTwo'>Premium Flavors</div>
       <ul className='cakesUL'>
-        {cakes.premiumFlavors.map((item) => (
+        {cupcakes.premiumFlavors.map((item) => (
           <li key={uniqid()} className='cupcakes-list-item'>
             {item}
           </li>
