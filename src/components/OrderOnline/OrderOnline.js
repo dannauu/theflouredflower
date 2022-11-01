@@ -89,11 +89,11 @@ const OrderOnline = () => {
       <h3 className='centerText hidden flex justify-center text-6xl text-green-400' id='RedirectingTimer'></h3>
       <div className='container m-auto width' id='formContainer'>
         <div className="mt-6" id='order-online'>
-          <label htmlFor="countries_multiple" className="block italic mb-2 text-4xl font-medium flex justify-center text-purple-600 centerText">What would you like to order?</label>
+          <label htmlFor="countries_multiple" className="block italic mb-2 text-4xl font-medium flex justify-center text-rose-900 centerText">What would you like to order?</label>
           <form onSubmit={sendEmail} className='text-center'>
             <div className='flex justify-center mb-5'>
 
-              <select multiple="" id="bakeryItems" name='bakery-item' className="bg-purple-200 border border-purple-600 text-purple-900 text-sm rounded-lg focus:border-purple-500 block w-1/2 p-2.5" onChange={checkSelection}>
+              <select multiple="" id="bakeryItems" name='bakery-item' className="bg-white border border-rose-900 text-rose-900 text-sm rounded-lg focus:border-purple-500 block w-1/2 p-2.5" onChange={checkSelection}>
                 <option defaultValue >Choose One</option>
                 <option value="cupcakes">Cupcakes</option>
                 <option value="cake">Cake</option>
@@ -105,30 +105,30 @@ const OrderOnline = () => {
 
 
             <div className="relative z-0 mb-6 w-full group">
-              <input name="first-name" className="block py-2.5 px-0 w-full text-sm text-gray-900 bg-purple-200 border-0 rounded-lg border-b-2 border-purple-600 appearance-none focus:outline-none focus:ring-0 focus:border-blue-600 peer"  required />
-              <label className='text-2xl text-purple-700 italic'>First Name:</label>
+              <input name="first-name" className="block py-2.5 px-0 w-full text-sm text-gray-900 bg-white border-0 rounded-lg border-b-2 border-rose-900 appearance-none focus:outline-none focus:ring-0 focus:border-rose-300 peer"  required />
+              <label className='text-2xl text-rose-900 italic'>First Name:</label>
             </div>
             <div className="relative z-0 mb-6 w-full group">
-              <input name="last-name" className="block py-2.5 px-0 w-full text-sm text-gray-900 bg-purple-200 border-0 border-b-2 rounded-lg border-purple-600 appearance-none focus:outline-none focus:ring-0 focus:border-blue-600 peer" required />
-              <label className='text-2xl text-purple-700 italic'>Last Name:</label>
+              <input name="last-name" className="block py-2.5 px-0 w-full text-sm text-gray-900 bg-white border-0 border-b-2 rounded-lg border-rose-900 appearance-none focus:outline-none focus:ring-0 focus:border-rose-300 peer" required />
+              <label className='text-2xl text-rose-900 italic'>Last Name:</label>
             </div>
             <div className="relative z-0 mb-6 w-full group">
-              <input type="tel" name="phone-number" id="floating_phone" className="block py-2.5 px-0 w-full rounded-lg text-sm text-gray-900 bg-purple-200 border-0 border-b-2 border-purple-600 appearance-none focus:outline-none focus:ring-0 focus:border-blue-600 peer" placeholder='555-555-5555'/>
-              <label className='text-2xl text-purple-700 italic'>Phone number:</label>
+              <input type="tel" name="phone-number" id="floating_phone" className="block py-2.5 px-0 w-full rounded-lg text-sm text-gray-900 bg-white border-0 border-b-2 border-rose-900 appearance-none focus:outline-none focus:ring-0 focus:border-rose-300 peer" placeholder='555-555-5555'/>
+              <label className='text-2xl text-rose-900 italic'>Phone number:</label>
             </div>
             <div className="relative z-0 mb-6 w-full group">
-              <input type="email" name="email" className="block py-2.5 px-0 w-full text-sm text-gray-900 bg-purple-200 border-0 border-b-2 border-purple-600 rounded-lg appearance-none focus:outline-none focus:ring-0 focus:border-blue-600 peer"required="" />
-              <label className='text-2xl text-purple-700 italic'>Email:</label>
+              <input type="email" name="email" className="block py-2.5 px-0 w-full text-sm text-gray-900 bg-white border-0 border-b-2 border-rose-900 rounded-lg appearance-none focus:outline-none focus:ring-0 focus:border-rose-300 peer"required="" />
+              <label className='text-2xl text-rose-900 italic'>Email:</label>
             </div>
             <div className="relative z-0 mb-6 w-full group">
-              <input name="flavor" className="block py-2.5 px-0 w-full text-sm text-gray-900 bg-purple-200 border-0 border-b-2 border-purple-600 rounded-lg appearance-none focus:outline-none focus:ring-0 focus:border-blue-600 peer" placeholder=" " required="" />
-              <label className='text-2xl text-purple-700 italic' id='bakeryItemFlavor'>{flavor}</label>
+              <input name="flavor" className="block py-2.5 px-0 w-full text-sm text-gray-900 bg-white border-0 border-b-2 border-rose-900 rounded-lg appearance-none focus:outline-none focus:ring-0 focus:border-rose-300 peer" placeholder=" " required="" />
+              <label className='text-2xl text-rose-900 italic' id='bakeryItemFlavor'>{flavor}</label>
             </div>
             <div className="relative z-0 mb-6 w-full group">
-              <input type="date" name="event-date" className="block py-2.5 px-0 w-full text-sm text-gray-900 bg-purple-200 border-0 border-b-2 border-purple-600 rounded-lg appearance-none focus:outline-none focus:ring-0 focus:border-blue-600 peer" placeholder=" " required="" id='date' />
-              <label className='text-2xl text-purple-700 italic'>Event Date:</label>
+              <input type="date" name="event-date" className="block py-2.5 px-0 w-full text-sm text-gray-900 bg-white border-0 border-b-2 border-rose-900 rounded-lg appearance-none focus:outline-none focus:ring-0 focus:border-rose-300 peer" placeholder=" " required="" id='date' />
+              <label className='text-2xl text-rose-900 italic'>Event Date:</label>
             </div>
-            <button type="submit" className="text-white bg-purple-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm w-full sm:w-auto px-5 py-2.5 text-center mb-2">Submit</button>
+            <button type="submit" className="text-white bg-rose-700 hover:bg-rose-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm w-full sm:w-auto px-5 py-2.5 text-center mb-2">Submit</button>
           </form>
 
         </div>
