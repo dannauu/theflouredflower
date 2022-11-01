@@ -1,5 +1,6 @@
 import React from 'react';
 import Modal from 'react-modal';
+import HolidayMenu from '../HolidayMenu/HolidayMenu';
 import Menu from '../Menu/Menu';
 
 const MenuModal = () => {
@@ -19,13 +20,13 @@ const MenuModal = () => {
     setIsOpen(false);
   }
     return (
-        <div id='menuModal' className='mb-4 font-medium rounded-md text-white bg-fuchsia-800 w-1/4 m-auto text-center'>
+        <div className='mb-4 font-medium rounded-md text-white bg-rose-900 w-1/4 m-auto text-center'>
           <button onClick={openModal}>Open Menu</button>
           <Modal
             isOpen={modalIsOpen}
             onAfterOpen={afterOpenModal}
             onRequestClose={closeModal}
-            contentLabel="Example Modal"><Menu/></Modal>
+            contentLabel="Example Modal"><HolidayMenu/><Menu/></Modal>
         </div>
       );
 }

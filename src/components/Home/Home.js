@@ -6,12 +6,14 @@ import Menu from '../Menu/Menu'
 import Gallery from '../Gallery/Gallery';
 import OrderOnline from '../OrderOnline/OrderOnline';
 import ScrollToTop from '../ScrollToTop/ScrollToTop';
+import HolidayMenu from '../HolidayMenu/HolidayMenu';
 
 const Home = () => {
     return (
         <>
             <HeroBanner />
             <HomepageMain />
+            <HolidayMenu />
             <Menu />
             <Gallery />
             <OrderOnline />

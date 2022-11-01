@@ -2,7 +2,7 @@
     position: fixed;
     bottom: 2em;
     right: 4em;
-    background-color: rgb(229, 204, 204);
+    background-color: #877b77;
   }
   
   @media (max-width: 900px) {

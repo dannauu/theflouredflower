@@ -1,8 +1,7 @@
+
 import { useState } from 'react'
 import { AiOutlineClose } from "react-icons/ai";
 import Data from './Data'
-import Tada from 'react-reveal/Tada';
-import Slide from 'react-reveal/Slide';
 
 const Gallery = () => {
 
@@ -15,9 +14,7 @@ const Gallery = () => {
 
     return (
         <div id='gallery'>
-            <Tada>
-                <h1 className='centerText flex justify-center mt-5 text-7xl text-purple-600 ffLobsterTwo'>Gallery</h1>
-            </Tada>
+            <h1 className='centerText flex justify-center mt-5 text-7xl text-rose-900 ffLobsterTwo'>Gallery</h1>
             <div className='mt-10 mb-10'>
                 <div className={model ? "model open" : "model"}>
                     <img src={tempimgSrc} alt='' />
@@ -26,14 +23,9 @@ const Gallery = () => {
                 <div className='gallery'>
                     {Data.map((item, index) => {
                         return (
-
                             <div className='pics' key={index} onClick={() => getImg(item.imgSrc)}>
-                                <Slide left>
-                                    <img src={item.imgSrc} className='galleryImg' alt='' />
-                                </Slide>
-
+                                <img src={item.imgSrc} className='galleryImg' alt='' />
                             </div>
-
                         )
                     })
                     }
