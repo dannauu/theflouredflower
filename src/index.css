@@ -283,7 +283,8 @@ code {
   }
 
   .textp {
-    font-size: 0.5rem
+    font-size: 0.5rem;
+    color: purple;
   }
 
   .imageA {
@@ -292,12 +293,12 @@ code {
   }
 
   .image {
-      display: none;
-    }
+    display: none;
+  }
 
-    .hiddenLogo {
-      display: block;
-    }
+  .hiddenLogo {
+    display: block;
+  }
 
   .width {
     width: 90%
@@ -332,14 +333,27 @@ code {
 
 }
 
-@media screen and (-webkit-min-device-pixel-ratio:0) { 
-    select,
-    textarea,
-    input {
-      font-size: 16px;
-    }
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+
+  select,
+  textarea,
+  input {
+    font-size: 16px;
+  }
 }
 
 input {
   text-align: center;
+}
+
+@media screen and (max-width: 1600px) {
+
+  .margin {
+    margin: 10px
+  }
+
+  .menu {
+    margin: 10px;
+  }
+
 }

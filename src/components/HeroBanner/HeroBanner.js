@@ -1,5 +1,5 @@
 import heroBanner from '../../assets/img/herobanner1.jpg'
-import Tada from 'react-reveal/Tada';
+import Fade from 'react-reveal/Fade';
 
 export default function Example() {
   return (
@@ -8,14 +8,14 @@ export default function Example() {
         <div className="heroContainer relative z-10 pb-8 bg-purple-100 sm:pb-16 md:pb-20 lg:max-w-2xl lg:w-full lg:pb-28 xl:pb-32 rounded flex justify-center">
           <main className="mt-10 margin mx-auto max-w-7xl px-4 sm:mt-12 sm:px-6 md:mt-16 lg:mt-20 lg:px-8 xl:mt-28">
             <div className="sm:text-center lg:text-left">
-              <Tada>
+              <Fade top>
               <h1 className="self-center text-5xl font-semibold whitespace-nowrap logo text-fuchsia-900 hover:text-purple-400 logo hiddenLogo">The Floured Flower</h1>
-              </Tada>
+              </Fade>
               <h2 className="image margin text-4xl tracking-tight font-extrabold text-gray-900 sm:text-5xl md:text-6xl">
                 <span className="centerText block xl:inline text-fuchsia-800">Custom Cakes</span>{' '}
                 <span className="centerText block text-fuchsia-200 xl:inline">and Cupcakes</span>
               </h2>
-              <p className="margin font-bold text-base text-black sm:mt-5 sm:text-lg sm:max-w-xl sm:mx-auto md:mt-5 md:text-xl lg:mx-0 centerText">
+              <p className="margin font-bold text-base text-purple-800 sm:mt-5 sm:text-lg sm:max-w-xl sm:mx-auto md:mt-5 md:text-xl lg:mx-0 centerText">
                 I specialize in cakes and cupcakes. I make my own fondant out of marshmallow (so it actually tastes good!) I also offer gluten-free and sugar-free cake options.
               </p>
               <div className="margin sm:mt-8 sm:flex sm:justify-center lg:justify-start">
