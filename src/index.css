@@ -302,6 +302,10 @@ code {
     display: block;
   }
 
+  .textMobile {
+    font-size: 13px;
+  }
+
   .width {
     width: 90%
   }
