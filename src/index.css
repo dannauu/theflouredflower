@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Lobster+Two&family=Questrial&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Mountains+of+Christmas:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Mountains+of+Christmas:wght@400&display=swap');
+
 
 body {
   margin: 0;
@@ -304,6 +305,17 @@ code {
 
   .textMobile {
     font-size: 13px;
+    line-height: normal;
+  }
+
+  .mobileLogo {
+    font-size: 2rem;
+  }
+
+  .textMobile2 {
+    font-size: 20px;
+    line-height: normal;
+    padding-bottom: 40px;
   }
 
   .width {
@@ -404,4 +416,8 @@ input {
 .holidayMenuBG {
   background-image: url(./assets/img/holidayMenuBG.jpg);
   background-size: cover;
+}
+
+.heroBannerFont {
+
 }
