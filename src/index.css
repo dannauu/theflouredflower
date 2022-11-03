@@ -71,19 +71,6 @@ code {
   }
 }
 
-@media (max-width: 480px) {
-  .gallery {
-    -webkit-column-count: 1;
-    -moz-column-count: 1;
-    column-count: 1;
-    -webkit-column-width: 100%;
-    -moz-column-width: 100%;
-    column-width: 100%;
-  }
-}
-
-/* model */
-
 .model {
   width: 100%;
   height: 100vh;
@@ -93,7 +80,7 @@ code {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: rgb(233 213 255);
+  background-color: rgba(0, 0, 0, 0.78);
   ;
   transition: opacity .4s ease, visibility .4s ease, transform .5s ease-in-out;
   visibility: hidden;
@@ -124,12 +111,12 @@ code {
 .model.open svg {
   position: fixed;
   top: 200px;
-  right: 100px;
+  right: 24px;
   width: 2rem;
   height: 2rem;
   padding: 5px;
-  background-color: rgba(0, 0, 0, 0.4);
-  color: #ffffff;
+  background-color: rgb(255, 255, 255);
+  color: #000000;
   cursor: pointer;
 }
 
@@ -178,65 +165,6 @@ code {
 .hiddenLogo {
   display: none;
 }
-
-/* @media screen and (max-width: 435px) {
-  .margin {
-    margin: 10px
-  }
-
-  .centerText {
-    text-align: center;
-  }
-
-  .textA {
-    font-size: 1.5rem;
-  }
-
-  .textp {
-    font-size: 0.5rem
-  }
-
-  .imageA {
-    width: 60%;
-    margin: auto;
-  }
-
-  .image {
-    display: none;
-  }
-
-  .width {
-    width: 90%
-  }
-
-  .heroContainer {
-    --extra-scallopRadius: 0;
-    --extra-scallopColor: 0 --extra-scallopWeight: 0;
-
-    background: none;
-    line-height: 0;
-  }
-
-  .menuImg {
-    width: 420px !important;
-  }
-
-  .navbar {
-    flex-direction: row;
-    margin: auto;
-  }
-
-  .centerContent {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-
-  .homeButton {
-    display: block;
-  }
-
-} */
 
 .cakesUL {
   max-width: 450px;
